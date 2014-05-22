@@ -1,0 +1,39 @@
+{
+  "name": "nodemy-analytics",
+  "version": "0.0.0",
+  "description": "Node Analytics Using Highcharts and Postgres",
+  "main": "app.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "connect": "*",
+    "express": "^3.4.4",
+    "glob": "3.2.9",
+    "jake": "*",
+    "jshint": "latest",
+    "node-schedule": "latest",
+    "stylus": "*",
+    "supertest": "git://github.com/visionmedia/supertest.git",
+    "superagent": "latest",
+    "pg": "latest",
+    "ejs": "latest",
+    "moment": "latest",
+    "async": "latest",
+    "request": "latest",
+    "mocha": "latest",
+    "logfmt": "^1.1.2",
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Broward Horne",
+  "license": "(BSD-2-Clause) MIT"
+}

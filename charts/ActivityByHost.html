@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Activity By Host</title> 
+</head>
+
+    <script type="text/javascript" src="/jquery/jquery-1.8.3.min.js"></script>
+    <script src="/highcharts/js/highcharts.js"></script>
+    <script src="/highcharts/js/modules/exporting.js"></script>
+
+
+   <!-- show activity by host id. -->
+   <script type="text/javascript" language="javascript">
+    $( document ).ready(function() {
+
+      $.getJSON('/v1/data/ActivityByHost' + window.location.search, function(options) {
+        var chart = new Highcharts.Chart(options);
+      });
+    });
+    </script>
+
+<body>
+    <h1>Activity By Host</h1>
+    <div id="container" style="width:85%; height:85%; margin: 0 auto; position:absolute"></div>
+</body>
+</html>
